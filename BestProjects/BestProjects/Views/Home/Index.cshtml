@@ -2,7 +2,74 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h4>Novo Contato</h4>
+                <hr />
+
+
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome </label>
+                        <input type="text" class="form-control" id="nome" placeholder="Ex: Heber Gustavo">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefono Res. </label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Ex: (00) 0000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">Celular </label>
+                        <input type="text" class="form-control" id="celular" placeholder="Ex: (00) 00000-0000">
+                    </div>
+                    <div class="form-group d-flex justify-content-center mt-4 mb-0">
+                        <button type="submit" class="btn btn-outline-primary">Adicionar</button>
+                    </div>
+                </form>
+
+                <hr />
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Telefone Res.</th>
+                            <th scope="col">Celular</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Heber</td>
+                            <td>34923848329</td>
+                            <td>34090239</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Heber</td>
+                            <td>34923848329</td>
+                            <td>34090239</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Heber</td>
+                            <td>34923848329</td>
+                            <td>34090239</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>
