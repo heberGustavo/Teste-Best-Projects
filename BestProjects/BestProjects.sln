@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestProjects", "BestProjects\BestProjects.csproj", "{FEB93A70-73EB-406B-8E91-B44A7FA1FF55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Portal", "0-Portal", "{25DF35F4-91D6-430B-9651-3F6FE1F3B11A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Domain", "1-Domain", "{00EAA23E-B48F-4F17-A82D-1406A558E993}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Data", "2-Data", "{690E7169-975E-4281-82A0-972252B3FC25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Utils", "3-Utils", "{990CA519-48DD-4D2D-B391-BEDD7519C6F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Migratin", "4-Migratin", "{37C7D3D9-C5F4-4531-9FA4-F2073F2A5D91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB93A70-73EB-406B-8E91-B44A7FA1FF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB93A70-73EB-406B-8E91-B44A7FA1FF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB93A70-73EB-406B-8E91-B44A7FA1FF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB93A70-73EB-406B-8E91-B44A7FA1FF55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEB93A70-73EB-406B-8E91-B44A7FA1FF55} = {25DF35F4-91D6-430B-9651-3F6FE1F3B11A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5729F389-7B6B-4B3A-BA8F-5A67A9907C1E}
+	EndGlobalSection
+EndGlobal
