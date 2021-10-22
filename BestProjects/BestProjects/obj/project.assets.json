@@ -5868,23 +5868,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\wf_heber\\_Teste Empresas TI\\Best Projects\\BestProjects\\BestProjects\\BestProjects.Portal.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Exemplo\\Teste-Best-Projects\\BestProjects\\BestProjects\\BestProjects.Portal.csproj",
       "projectName": "BestProjects.Portal",
-      "projectPath": "C:\\wf_heber\\_Teste Empresas TI\\Best Projects\\BestProjects\\BestProjects\\BestProjects.Portal.csproj",
-      "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
-      "outputPath": "C:\\wf_heber\\_Teste Empresas TI\\Best Projects\\BestProjects\\BestProjects\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Exemplo\\Teste-Best-Projects\\BestProjects\\BestProjects\\BestProjects.Portal.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Exemplo\\Teste-Best-Projects\\BestProjects\\BestProjects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5899,8 +5902,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\wf_heber\\_Teste Empresas TI\\Best Projects\\BestProjects\\BestProjects.CrossCutting\\BestProjects.CrossCutting.csproj": {
-              "projectPath": "C:\\wf_heber\\_Teste Empresas TI\\Best Projects\\BestProjects\\BestProjects.CrossCutting\\BestProjects.CrossCutting.csproj"
+            "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Exemplo\\Teste-Best-Projects\\BestProjects\\BestProjects.CrossCutting\\BestProjects.CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\Exemplo\\Teste-Best-Projects\\BestProjects\\BestProjects.CrossCutting\\BestProjects.CrossCutting.csproj"
             }
           }
         }
@@ -5930,12 +5933,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.13, 3.1.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5944,7 +5941,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

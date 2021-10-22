@@ -1,6 +1,4 @@
-﻿CREATE DATABASE BestProjectHeberGustavo GO;
-
-CREATE TABLE Usuario 
+﻿CREATE TABLE Usuario 
 (
     id_usuario INT IDENTITY(1,1) NOT NULL,
 	nome VARCHAR(30) NOT NULL,
