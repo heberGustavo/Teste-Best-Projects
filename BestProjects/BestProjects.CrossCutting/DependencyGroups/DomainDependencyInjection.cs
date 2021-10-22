@@ -1,4 +1,6 @@
-﻿using BestProjects.Domain.IBusiness.Migration;
+﻿using BestProjects.Domain.Business;
+using BestProjects.Domain.IBusiness;
+using BestProjects.Domain.IBusiness.Migration;
 using BestProjects.Migration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -13,7 +15,7 @@ namespace BestProjects.CrossCutting.DependencyGroups
         {
             serviceCollection.AddTransient<IMigrationBusiness, MigrationBusiness>();
 
-            //serviceCollection.AddTransient<ICategoriaSorteioBusiness, CategoriaSorteioBusiness>();
+            serviceCollection.AddTransient<IUsuarioBusiness, UsuarioBusiness>();
         }
     }
 }

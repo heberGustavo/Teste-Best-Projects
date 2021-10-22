@@ -1,4 +1,6 @@
 ﻿using BestProjects.Data;
+using BestProjects.Data.Repository;
+using BestProjects.Domain.IRepository;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,7 @@ namespace BestProjects.CrossCutting.DependencyGroups
         {
             serviceCollection.AddScoped<SqlDataContext, SqlDataContext>();
 
-            //serviceCollection.AddTransient<ICategoriaSorteioRepository, CategoriaSorteioRepository>();
+            serviceCollection.AddTransient<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }

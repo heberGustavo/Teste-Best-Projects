@@ -10,7 +10,8 @@ namespace BestProjects.Data.EntityData
     {
         [Key]
         public int id_usuario { get; set; }
-        public int id_tipo_usuario { get; set; }
-        public bool status { get; set; }
+        public string nome { get; set; }
+        public string telefone { get; set; }
+        public string celular { get; set; }
     }
 }
