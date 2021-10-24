@@ -23,5 +23,16 @@ namespace BestProjects.Data.Repository
                                                             VALUES 
                                                             (@nome, @telefone, @celular);",
                                                             new { nome = usuario.nome, telefone = usuario.telefone, celular = usuario.celular });
+
+        public async Task<int> ExcluirContato(int idUsuario)
+            => await _dataContext.Connection.ExecuteAsync(@"DELETE 
+                                                            FROM Usuario
+                                                            WHERE id_usuario = @idUsuario;",
+                                                            new { idUsuario });
+
+        public async Task<IEnumerable<Usuario>> ObterTodosContatos()
+            => await _dataContext.Connection.QueryAsync<Usuario>(@"SELECT * 
+                                                             FROM Usuario u
+                                                             ORDER BY u.nome");
     }
 }

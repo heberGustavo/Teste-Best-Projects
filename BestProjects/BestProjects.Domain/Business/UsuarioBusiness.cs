@@ -25,12 +25,19 @@ namespace BestProjects.Domain.Business
 
                 if (!string.IsNullOrEmpty(usuario.telefone))
                 {
-                    var resultado = await _usuarioRepository.CadastrarContato(usuario);
+                    try
+                    {
+                        var resultado = await _usuarioRepository.CadastrarContato(usuario);
 
-                    if(resultado == 1)
-                        return new ResultResponseModel(false, "Contato " + usuario.nome + " cadastrado com sucesso!");
-                    else
-                        return new ResultResponseModel(true, "Erro ao cadastrar contato " + usuario.nome + ". Tente novamente!");
+                        if (resultado == 1)
+                            return new ResultResponseModel(false, "Contato " + usuario.nome + " cadastrado com sucesso!");
+                        else
+                            return new ResultResponseModel(true, "Erro ao cadastrar contato " + usuario.nome + ". Tente novamente!");
+                    }
+                    catch(Exception e)
+                    {
+                        return new ResultResponseModel(true, "Erro ao cadastrar contato. Contate o administrador!");
+                    };
 
                 }
                 else
@@ -44,5 +51,32 @@ namespace BestProjects.Domain.Business
                 return new ResultResponseModel(true, "Campo Nome é obrigatório");
             }
         }
+
+        public async Task<ResultResponseModel> ExcluirContato(int idContato)
+        {
+            if (!string.IsNullOrEmpty(Convert.ToString(idContato)))
+            {
+                try
+                {
+                    var resultado = await _usuarioRepository.ExcluirContato(idContato);
+
+                    if (resultado == 1)
+                        return new ResultResponseModel(false, "Contato excluído com sucesso!");
+                    else
+                        return new ResultResponseModel(true, "Erro ao excluir contato. Tente novamente!");
+                }
+                catch (Exception e)
+                {
+                    return new ResultResponseModel(true, "Erro ao excluir contato. Contate o administrador!");
+                }
+            }
+            else
+            {
+                return new ResultResponseModel(true, "Necessário informar o id. Tente novamente!");
+            }
+        }
+
+        public Task<IEnumerable<Usuario>> ObterTodosContatos()
+            => _usuarioRepository.ObterTodosContatos();
     }
 }

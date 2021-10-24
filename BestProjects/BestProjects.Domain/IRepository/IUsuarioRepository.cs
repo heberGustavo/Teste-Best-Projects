@@ -10,5 +10,7 @@ namespace BestProjects.Domain.IRepository
     public interface IUsuarioRepository : IRepositoryBase<Usuario>
     {
         Task<int> CadastrarContato(Usuario usuario);
+        Task<IEnumerable<Usuario>> ObterTodosContatos();
+        Task<int> ExcluirContato(int idContato);
     }
 }

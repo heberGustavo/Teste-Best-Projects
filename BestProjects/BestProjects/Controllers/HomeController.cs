@@ -21,9 +21,18 @@ namespace BestProjects.Controllers
             _usuarioBusiness = usuarioBusiness;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var resultado = await _usuarioBusiness.ObterTodosContatos();
+            return View(resultado);
+        }
+
+        [HttpGet]
+        [Route("[controller]/[action]")]
+        public async Task<JsonResult> ObterTodosContatos()
+        {
+            var resultado = await _usuarioBusiness.ObterTodosContatos();
+            return Json(new { erro = false, resultado });
         }
 
         [HttpPost]
@@ -31,6 +40,14 @@ namespace BestProjects.Controllers
         public async Task<JsonResult> CadastrarContato([FromBody] Usuario usuario)
         {
             var resultado = await _usuarioBusiness.CadastrarContato(usuario);
+            return Json(new { erro = resultado.erro, mensagem = resultado.mensagem });
+        }
+
+        [HttpGet]
+        [Route("[controller]/[action]/{idContato}")]
+        public async Task<JsonResult> ExcluirContato(int idContato)
+        {
+            var resultado = await _usuarioBusiness.ExcluirContato(idContato);
             return Json(new { erro = resultado.erro, mensagem = resultado.mensagem });
         }
     }

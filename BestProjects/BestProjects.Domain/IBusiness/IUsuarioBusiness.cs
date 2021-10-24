@@ -10,5 +10,7 @@ namespace BestProjects.Domain.IBusiness
     public interface IUsuarioBusiness : IBusinessBase<Usuario>
     {
         Task<ResultResponseModel> CadastrarContato(Usuario usuario);
+        Task<IEnumerable<Usuario>> ObterTodosContatos();
+        Task<ResultResponseModel> ExcluirContato(int idContato);
     }
 }
